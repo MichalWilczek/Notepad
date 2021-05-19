@@ -27,6 +27,7 @@ __published:	// IDE-managed Components
         TMemo *NotepadDisplay;
         void __fastcall Open1Click(TObject *Sender);
         void __fastcall Saveas1Click(TObject *Sender);
+        void __fastcall SaveCTRLS1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm2(TComponent* Owner);

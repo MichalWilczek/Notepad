@@ -20,6 +20,12 @@ object Form2: TForm2
     Width = 1289
     Height = 616
     Align = alClient
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 0
   end
   object MainMenu1: TMainMenu
@@ -39,6 +45,7 @@ object Form2: TForm2
       end
       object SaveCTRLS1: TMenuItem
         Caption = '&Save    CTRL+S'
+        OnClick = SaveCTRLS1Click
       end
       object Saveas1: TMenuItem
         Caption = 'S&ave as'

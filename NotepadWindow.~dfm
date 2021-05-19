@@ -20,6 +20,12 @@ object Form2: TForm2
     Width = 1289
     Height = 616
     Align = alClient
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 0
   end
   object MainMenu1: TMainMenu
@@ -53,10 +59,13 @@ object Form2: TForm2
     end
   end
   object OpenDialog1: TOpenDialog
+    Filter = 'Text files (*.txt)|*.txt|All files (*.*)|*.*'
+    Options = [ofOverwritePrompt, ofEnableSizing]
     Left = 48
     Top = 8
   end
   object SaveDialog1: TSaveDialog
+    Filter = 'Text files (*.txt)|*.txt|All files (*.*)|*.*'
     Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
     Left = 88
     Top = 8
