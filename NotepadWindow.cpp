@@ -49,7 +49,28 @@ void __fastcall TForm2::SaveCTRLS1Click(TObject *Sender)
     if (fileName != "") {
         NotepadDisplay->Lines->SaveToFile(fileName);
     } else {
-        Form2->Saveas1Click(mainMenu1);
+        Form2->Saveas1Click(MainMenu1);
+    }
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::New1Click(TObject *Sender)
+{
+    if (Application->MessageBox("Do you want to save changes in the file?",
+    "Confirm", MB_YESNOCANCEL | MB_ICONQUESTION) == IDYES) {
+        NotepadDisplay->Lines->Clear();
+        fileName = "";
+    }
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::OnKeyDown(TObject *Sender, WORD &Key, TShiftState Shift)
+{
+    if (Shift.Contains(ssCtrl)) {
+        if ((Key == 's') || (Key = 'S')) {
+            Form2->SaveCTRLS1Click(MainMenu1);
+        }
     }
 }
 //---------------------------------------------------------------------------

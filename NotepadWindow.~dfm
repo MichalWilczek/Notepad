@@ -12,6 +12,7 @@ object Form2: TForm2
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
+  OnKeyDown = OnKeyDown
   PixelsPerInch = 96
   TextHeight = 13
   object NotepadDisplay: TMemo
@@ -35,6 +36,7 @@ object Form2: TForm2
       Caption = '&File'
       object New1: TMenuItem
         Caption = '&New'
+        OnClick = New1Click
       end
       object N1: TMenuItem
         Caption = '-'
@@ -45,6 +47,7 @@ object Form2: TForm2
       end
       object SaveCTRLS1: TMenuItem
         Caption = '&Save    CTRL+S'
+        OnClick = SaveCTRLS1Click
       end
       object Saveas1: TMenuItem
         Caption = 'S&ave as'
