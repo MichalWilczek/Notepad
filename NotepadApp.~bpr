@@ -4,10 +4,10 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="NotepadApp.exe"/>
-    <OBJFILES value="NotepadApp.obj"/>
+    <OBJFILES value="NotepadApp.obj NotepadWindow.obj"/>
     <RESFILES value="NotepadApp.res"/>
     <DEFFILE value=""/>
-    <RESDEPEN value="$(RESFILES)"/>
+    <RESDEPEN value="$(RESFILES) NotepadWindow.dfm"/>
     <LIBFILES value=""/>
     <LIBRARIES value=""/>
     <SPARELIBS value="vcl.lib rtl.lib"/>
@@ -46,6 +46,7 @@
       <FILE FILENAME="NotepadApp.res" FORMNAME="" UNITNAME="NotepadApp.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="NotepadApp.cpp" FORMNAME="" UNITNAME="NotepadApp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="NotepadApp.cpp" FORMNAME="Form1" UNITNAME="NotepadApp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NotepadWindow.cpp" FORMNAME="Form2" UNITNAME="NotepadWindow" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>

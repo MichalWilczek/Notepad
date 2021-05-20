@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 189
-  Top = 123
+  Left = 357
+  Top = 133
   Width = 1305
   Height = 675
   Caption = 'Notepad'
@@ -103,9 +103,11 @@ object Form2: TForm2
         Caption = '&Details'
         object Aboutprogram1: TMenuItem
           Caption = 'A&bout program'
+          OnClick = Aboutprogram1Click
         end
         object Meonline1: TMenuItem
           Caption = '&Me online'
+          OnClick = Meonline1Click
         end
       end
     end

@@ -51,6 +51,8 @@ __published:	// IDE-managed Components
         void __fastcall PasteCTRLV1Click(TObject *Sender);
         void __fastcall Wraptext1Click(TObject *Sender);
         void __fastcall Font1Click(TObject *Sender);
+        void __fastcall Aboutprogram1Click(TObject *Sender);
+        void __fastcall Meonline1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm2(TComponent* Owner);

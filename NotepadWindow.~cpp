@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "NotepadWindow.h"
+#include "AboutProgram.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -134,6 +135,18 @@ void __fastcall TForm2::Font1Click(TObject *Sender)
         NotepadDisplay->Font->Size = FontDialog1->Font->Size;
         NotepadDisplay->Font->Style = FontDialog1->Font->Style;
     }
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::Aboutprogram1Click(TObject *Sender)
+{
+    Form3->ShowModal();        
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::Meonline1Click(TObject *Sender)
+{
+    ShellExecute(NULL, "open", "http://google.com", NULL, NULL, SW_SHOWNORMAL);        
 }
 //---------------------------------------------------------------------------
 

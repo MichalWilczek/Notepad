@@ -35,6 +35,9 @@ __published:	// IDE-managed Components
         TMenuItem *Help1;
         TLabel *Label1;
         TFontDialog *FontDialog1;
+        TMenuItem *Details1;
+        TMenuItem *Aboutprogram1;
+        TMenuItem *Meonline1;
         void __fastcall Open1Click(TObject *Sender);
         void __fastcall Saveas1Click(TObject *Sender);
         void __fastcall SaveCTRLS1Click(TObject *Sender);
@@ -48,6 +51,8 @@ __published:	// IDE-managed Components
         void __fastcall PasteCTRLV1Click(TObject *Sender);
         void __fastcall Wraptext1Click(TObject *Sender);
         void __fastcall Font1Click(TObject *Sender);
+        void __fastcall Aboutprogram1Click(TObject *Sender);
+        void __fastcall Meonline1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm2(TComponent* Owner);
